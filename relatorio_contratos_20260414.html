@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Relatório Consolidado de Contratos Anômalos</title>
+<style>
+  body { font-family: Arial, sans-serif; margin:0; padding:20px; background:#f5f7fa; color:#333; }
+  .header { background:#0D2B55; color:white; padding:24px 32px; border-radius:8px; margin-bottom:24px; }
+  .header h1 { margin:0; font-size:24px; }
+  .header p { margin:6px 0 0; opacity:.85; font-size:13px; }
+  .cards { display:flex; gap:16px; margin-bottom:24px; flex-wrap:wrap; }
+  .card { background:white; border-radius:8px; padding:20px 24px; flex:1; min-width:180px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  .card .num { font-size:30px; font-weight:700; color:#0D2B55; }
+  .card .lbl { font-size:12px; color:#666; margin-top:4px; }
+  .section { background:white; border-radius:8px; padding:24px; margin-bottom:20px; box-shadow:0 1px 4px rgba(0,0,0,.08); }
+  .section h2 { margin-top:0; font-size:16px; color:#0D2B55; border-bottom:2px solid #E3F2FD; padding-bottom:10px; }
+  .bar-row { display:flex; align-items:center; gap:12px; margin-bottom:8px; }
+  .bar-label { width:220px; font-size:13px; text-align:right; color:#555; }
+  .bar-wrap { flex:1; background:#E8ECEF; border-radius:4px; height:18px; }
+  .bar-fill { background:#1565C0; border-radius:4px; height:100%; }
+  .bar-count { width:90px; font-size:12px; color:#888; }
+  table { width:100%; border-collapse:collapse; font-size:13px; }
+  th { background:#0D2B55; color:white; padding:10px 12px; text-align:left; }
+  td { padding:9px 12px; border-bottom:1px solid #EEE; vertical-align:top; }
+  tr:hover td { background:#F5F9FF; }
+  .footer { text-align:center; font-size:11px; color:#999; margin-top:24px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Relatório Consolidado de Contratos Anômalos</h1>
+  <p>Período analisado: 01/01/2021 até 31/12/2025</p>
+  <p>Gerado em 14/04/2026 10:30 | Modelo LLM: gpt-4o-mini | Provider: openai</p>
+</div>
+
+<div class="cards">
+  <div class="card">
+    <div class="num">11152</div>
+    <div class="lbl">Contratos anômalos classificados</div>
+  </div>
+  <div class="card">
+    <div class="num">R$ 4.253.687.153.100,00</div>
+    <div class="lbl">Valor total dos contratos anômalos</div>
+  </div>
+  <div class="card">
+    <div class="num">2693</div>
+    <div class="lbl">Objetos vagos detectados</div>
+  </div>
+  <div class="card">
+    <div class="num">8</div>
+    <div class="lbl">Categorias identificadas</div>
+  </div>
+</div>
+
+<div class="section">
+  <h2>Distribuição de contratos anômalos por categoria</h2>
+  
+        <div class="bar-row">
+          <span class="bar-label">Outros</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:100%"></div></div>
+          <span class="bar-count">3042 (27.3%)</span>
+        </div>
+        
+        <div class="bar-row">
+          <span class="bar-label">Saúde</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:99%"></div></div>
+          <span class="bar-count">3006 (27.0%)</span>
+        </div>
+        
+        <div class="bar-row">
+          <span class="bar-label">Infraestrutura</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:58%"></div></div>
+          <span class="bar-count">1754 (15.7%)</span>
+        </div>
+        
+        <div class="bar-row">
+          <span class="bar-label">Educação</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:43%"></div></div>
+          <span class="bar-count">1310 (11.7%)</span>
+        </div>
+        
+        <div class="bar-row">
+          <span class="bar-label">Tecnologia da Informação</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:23%"></div></div>
+          <span class="bar-count">708 (6.3%)</span>
+        </div>
+        
+        <div class="bar-row">
+          <span class="bar-label">Segurança Pública</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:22%"></div></div>
+          <span class="bar-count">675 (6.1%)</span>
+        </div>
+        
+        <div class="bar-row">
+          <span class="bar-label">Administrativo</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:17%"></div></div>
+          <span class="bar-count">519 (4.7%)</span>
+        </div>
+        
+        <div class="bar-row">
+          <span class="bar-label">Meio Ambiente</span>
+          <div class="bar-wrap"><div class="bar-fill" style="width:5%"></div></div>
+          <span class="bar-count">138 (1.2%)</span>
+        </div>
+        
+</div>
+
+<div class="section">
+  <h2>Órgãos com mais anomalias</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Órgão</th>
+        <th>Qtd. anomalias</th>
+        <th>Valor total suspeito</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>24200004</td>
+          <td>2011</td>
+          <td>R$ 978.971.730.346,00</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>1589</td>
+          <td>R$ 606.704.636.245,00</td>
+        </tr>
+        
+        <tr>
+          <td>47200003</td>
+          <td>1477</td>
+          <td>R$ 77.144.703,00</td>
+        </tr>
+        
+        <tr>
+          <td>43200007</td>
+          <td>856</td>
+          <td>R$ 554.732.377.150,00</td>
+        </tr>
+        
+        <tr>
+          <td>08200003</td>
+          <td>336</td>
+          <td>R$ 139.254.023.777,00</td>
+        </tr>
+        
+        <tr>
+          <td>47000000</td>
+          <td>235</td>
+          <td>R$ 112.470.420.959,00</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>205</td>
+          <td>R$ 45.552.754.767,00</td>
+        </tr>
+        
+        <tr>
+          <td>24200204</td>
+          <td>199</td>
+          <td>R$ 51.881.820.448,00</td>
+        </tr>
+        
+        <tr>
+          <td>24200184</td>
+          <td>192</td>
+          <td>R$ 65.320.117.930,00</td>
+        </tr>
+        
+        <tr>
+          <td>21000000</td>
+          <td>189</td>
+          <td>R$ 77.384.545.329,00</td>
+        </tr>
+        
+        <tr>
+          <td>30000000</td>
+          <td>171</td>
+          <td>R$ 91.411.423.811,00</td>
+        </tr>
+        
+        <tr>
+          <td>19000000</td>
+          <td>163</td>
+          <td>R$ 73.858.899.966,00</td>
+        </tr>
+        
+        <tr>
+          <td>43000000</td>
+          <td>135</td>
+          <td>R$ 74.574.263.123,00</td>
+        </tr>
+        
+        <tr>
+          <td>08000000</td>
+          <td>133</td>
+          <td>R$ 147.226.667.730,00</td>
+        </tr>
+        
+        <tr>
+          <td>24200424</td>
+          <td>130</td>
+          <td>R$ 11.936.049.305,00</td>
+        </tr>
+        
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h2>Total em R$ por nível de risco</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Nível de risco</th>
+        <th>Quantidade</th>
+        <th>Valor total</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ALTO</td>
+          <td>1115</td>
+          <td>R$ 2.908.981.871.788,00</td>
+        </tr>
+        
+        <tr>
+          <td>BAIXO</td>
+          <td>7805</td>
+          <td>R$ 342.511.226.913,00</td>
+        </tr>
+        
+        <tr>
+          <td>MÉDIO</td>
+          <td>2232</td>
+          <td>R$ 1.002.194.054.399,00</td>
+        </tr>
+        
+    </tbody>
+  </table>
+</div>
+
+<div class="section">
+  <h2>Lista de objetos vagos detectados</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Órgão</th>
+        <th>Objeto original</th>
+        <th>Categoria</th>
+        <th>Risco</th>
+        <th>Justificativa</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>22000000</td>
+          <td>O objeto do presente instrumento é a contratação de empresa para prestação de serviços
+contínuos a serem executados com dedicação exclusiva ...</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>Descrição genérica e falta de especificidade sobre os serviços a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>46000000</td>
+          <td>Contratação direta para prestação de serviços técnicos especializados, sob demanda, para desenvolvimento e implantação de processos, serviço...</td>
+          <td>Tecnologia da Informação</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais serviços ou sistemas serão desenvolvidos.</td>
+        </tr>
+        
+        <tr>
+          <td>56200012</td>
+          <td>É a contratação de empresa para prestação de serviços contínuos a serem executados com dedicação exclusiva de mão de obra terceirizada, regi...</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>O objeto é genérico e não especifica quais serviços serão prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>13000000</td>
+          <td>Contratação de produtos e serviços por meio de pacote de serviços dos CORREIOS, para a Procuradoria-Geral do Estado do Ceará - PGE</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>Descrição muito genérica e não especifica quais produtos e serviços.</td>
+        </tr>
+        
+        <tr>
+          <td>46200009</td>
+          <td>Contratação de serviço de produtos e serviços por meio de Pacote de Serviços dos CORREIOS</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>Descrição genérica e não especifica quais produtos e serviços serão contratados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Contratualização da ata n° 253/2025, por 06 (seis) meses, no valor de R$ 1.293.028,75, para atender as necessidades do HCASG</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>O objeto é vago, não especifica o que será adquirido para atender as necessidades.</td>
+        </tr>
+        
+        <tr>
+          <td>31200003</td>
+          <td>O objeto do presente instrumento é a contratação de empresa para prestação de serviços contínuos a serem executados com dedicação exclusiva ...</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>Descrição muito genérica e não especifica os serviços a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Contratualização da ATA Nº 195/2025, por 06 (seis) meses, no valor de R$ 4.923.715,66, para atender as necessidades do HCASG.</td>
+          <td>Saúde</td>
+          <td>MÉDIO</td>
+          <td>O objeto é vago, pois não especifica o que será adquirido para atender as necessidades.</td>
+        </tr>
+        
+        <tr>
+          <td>31200006</td>
+          <td>Contratação de produtos e serviços por meio de Pacote de Serviços dos CORREIOS mediante adesão ao Termo de Condições Comerciais e Anexos, qu...</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>O objeto é genérico e não especifica quais produtos e serviços serão contratados.</td>
+        </tr>
+        
+        <tr>
+          <td>30000000</td>
+          <td>Contratação de empresa para prestação de serviços contínuos a serem executados com dedicação exclusiva de mão de obra terceirizada, regidos ...</td>
+          <td>Segurança Pública</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica os serviços exatos a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200004</td>
+          <td>AQUISIÇÃO DE MATERIAL DE CONSUMO PARA ATENDER AS NECESSIDADES DA SRCEN (QUIXADÁ)</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição genérica e sem especificação do material a ser adquirido.</td>
+        </tr>
+        
+        <tr>
+          <td>24200204</td>
+          <td>ATA de registro de preços Nº 2025/03963, Pregão eletrônico 20241051, que tem como objeto aquisição - MATERIAL LABORATORIAL</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica quais materiais laboratoriais serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>10100013</td>
+          <td>AQUISIÇÃO DE MATERIAL QUÍMICO</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica quais materiais químicos serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Contratualização da ATA Nº 32212/2024, por 06 (seis) meses, no valor de R$ 4.819.272,00, para atender as necessidades do HCASG.</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica o que será contratado.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Contratualização da ATA 2025/01894, por 06 (seis) meses, no valor de R$ 398.999,34, para atender as necessidades do HCASG.</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>O objeto é vago, pois não especifica o que será adquirido para atender as necessidades.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>O objeto do presente instrumento é a contratação de empresa para prestação de serviços contínuos a
+serem executados com dedicação exclusiva ...</td>
+          <td>Segurança Pública</td>
+          <td>MÉDIO</td>
+          <td>Descrição genérica sobre a prestação de serviços sem especificar quais serviços.</td>
+        </tr>
+        
+        <tr>
+          <td>24200424</td>
+          <td>PRESTAÇÃO DE SERVIÇOS POSTAIS E REEMBOLSOS POSTAIS TELEMÁTICOS, CONVENCIONAIS E CORRELATOS, PARA ATENDER A NECESSIDADE DA HEMORREDE.</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>Descrição muito genérica e não especifica o que exatamente será contratado.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>O objeto desta dispensa de licitação é a contratação de empresa para prestação de serviços
+contínuos a serem executados com dedicação exclus...</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>Descrição muito genérica e sem especificação clara dos serviços.</td>
+        </tr>
+        
+        <tr>
+          <td>27200004</td>
+          <td>O presente CONTRATO DE GESTÃO tem por objeto fomentar a capacitação, a produção, a
+pesquisa e a difusão nas áreas de arte e cultura de acord...</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica ações concretas ou produtos a serem entregues.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>O objeto do presente instrumento é a contratação de empresa para prestação de serviços
+contínuos a serem executados com dedicação exclusiva ...</td>
+          <td>Outros</td>
+          <td>MÉDIO</td>
+          <td>Descrição genérica e falta de especificidade sobre os serviços a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>10100013</td>
+          <td>AQUISIÇÃO DE MATERIAL QUÍMICO</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica quais materiais químicos serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>47000000</td>
+          <td>Aquisição de materiais de limpeza diversos.</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais materiais de limpeza serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>10100008</td>
+          <td>O objeto da licitação é a contratação de empresa para prestação de serviços contínuos a serem executados com dedicação exclusiva de mão de o...</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica os serviços a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>62000000</td>
+          <td>Contratação de empresa para prestação de serviços contínuos a serem executados com dedicação exclusiva de mão de obra terceirizada, regidos ...</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais serviços serão prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>29200007</td>
+          <td>REGISTRO DE PREÇOS SOLUÇÕES DE FIREWALL </td>
+          <td>Tecnologia da Informação</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais soluções de firewall serão contratadas.</td>
+        </tr>
+        
+        <tr>
+          <td>24200204</td>
+          <td>ATA de registro de preços Nº 2025/16953, Pregão eletrônico 20240061, que tem como objeto aquisição MATERIAL PERMANENTE</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica o que será adquirido.</td>
+        </tr>
+        
+        <tr>
+          <td>24200204</td>
+          <td>ATA de registro de preços Nº2025/00006 Pregão eletrônico 20250350,que tem como objeto aquisição -MATERIAL FARMACOLÓGICO</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica quais materiais farmacológicos serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>08200007</td>
+          <td>PRESTAÇÃO DE SERVIÇOS CONTÍNUOS A SEREM EXECUTADOS COM DEDICAÇÃO EXCLUSIVA DE MÃO DE OBRA TERCEIRIZADA, REGIDOS PELA CONSOLIDAÇÃO DAS LEIS T...</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição genérica e sem especificação do tipo de serviços a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>CONCLUSÃO E SERVIÇOS COMPLEMENTARES DA EEM SÃO GONÇALO DO AMARANTE (CÁGADO). CT 406/2025.</td>
+          <td>Infraestrutura</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica os serviços a serem realizados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200424</td>
+          <td>Aquisição de insumos de laboratórios para atender a necessidade do HEMOCE, através de entrega imediata, OC 100724/2025, ARP 2025/03963, PE 1...</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais insumos serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>42200001</td>
+          <td>Tem por objeto a contratação da empresa de prestação de serviços de mão de obra terceirizada</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica quais serviços serão prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Contratualização da ATA Nº 4566/2024, por 06 (seis) meses, no valor de R$ 270.547,56, para atender as necessidades do HCASG.</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e sem detalhes sobre o que será contratado.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Aquisição de material médico hospitalar por 12 (doze) meses para atender as necessidades do HCASG.</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais materiais serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>O objeto desta dispensa de licitação é o Lote I, a contratação de empresa para prestação de serviços
+contínuos a serem executados com dedica...</td>
+          <td>Segurança Pública</td>
+          <td>MÉDIO</td>
+          <td>Descrição genérica e falta de especificidade sobre os serviços a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200003</td>
+          <td>Contratação de empresa para prestação de serviços contínuos a serem executados com dedicação exclusiva de mão de obra terceirizada, regidos ...</td>
+          <td>Saúde</td>
+          <td>MÉDIO</td>
+          <td>Descrição genérica sobre serviços contínuos sem especificar quais serviços serão prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200184</td>
+          <td>8 PROTESES, HASTE UMERAL REVERSO, EMBALAGEM 1.0 UNIDADE. MARCA: LIMACORPORATE S.P.A ¿ ITALIA</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição do objeto é muito específica, mas não informa a finalidade ou uso.</td>
+        </tr>
+        
+        <tr>
+          <td>24200224</td>
+          <td>RECURSO DESTINADO A AQUISIÇÃO DE MATERIAL HOSPITALA CONFORME ATA Nº 2025/12697 PARA HSJ</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>Descrição genérica e uso da expressão 'conforme necessidade'.</td>
+        </tr>
+        
+        <tr>
+          <td>24200004</td>
+          <td>Aquisição de Mobiliários para NÍVEL CENTRAL/SESA.</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais mobiliários serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>24200224</td>
+          <td>RECURSO DESTINADO A AQUISIÇÃO DE MATERIAL DE LABORATÓRIO CONFORME ATA Nº 2025/03963 PARA HSJ</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>Descrição genérica e uso da expressão 'conforme necessidade'.</td>
+        </tr>
+        
+        <tr>
+          <td>10100002</td>
+          <td>CONTRATAÇÃO DE SERVIÇOS DE LINKS DE INTERNET PARA ATENDER AS NECESSIDADES DA POLÍCIA CIVIL.</td>
+          <td>Segurança Pública</td>
+          <td>MÉDIO</td>
+          <td>O objeto é genérico e não especifica detalhes sobre os serviços de internet.</td>
+        </tr>
+        
+        <tr>
+          <td>46000000</td>
+          <td>Aquisição de Equipamentos de Tecnologia</td>
+          <td>Tecnologia da Informação</td>
+          <td>BAIXO</td>
+          <td>Descrição muito genérica e não especifica quais equipamentos serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>O objeto da licitação é o Registro de Preço para futuras e eventuais aquisições de Material de
+Consumo - Expediente (Papéis).</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais materiais serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Contratualização da ATA nº 4117/2024, por 06 (seis) meses, no valor de R$ 536.159,16, para atender as necessidades do HCASG.</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>O objeto é vago, pois não especifica o que será adquirido para atender as necessidades.</td>
+        </tr>
+        
+        <tr>
+          <td>27000000</td>
+          <td>3.1. O objeto do presente instrumento é a contratação de serviços comuns de
+organização e realização de eventos de pequeno, médio e grande p...</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>Descrição genérica e falta de detalhes específicos sobre os serviços.</td>
+        </tr>
+        
+        <tr>
+          <td>18000000</td>
+          <td>O objeto do presente contrato é a prestação de serviços contínuos, a serem executadas com dedicação exclusiva de mão de obra terceirizada, r...</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais serviços serão prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>24200214</td>
+          <td>Aquisição de insumos laboratoriais por meio da ATA N° 2025/03963 para atender as necessidades do HCASG.</td>
+          <td>Saúde</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais insumos laboratoriais serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>10100002</td>
+          <td>AQUISIÇÃO DE MATERIAL DE CONSUMO COM FORNECIMENTO CONTINUADO PARA ATENDER AS NECESSIDADES DA POLÍCIA CIVIL.</td>
+          <td>Segurança Pública</td>
+          <td>BAIXO</td>
+          <td>Descrição genérica e não especifica quais materiais de consumo serão adquiridos.</td>
+        </tr>
+        
+        <tr>
+          <td>18000000</td>
+          <td>Contratação de empresa para prestação de serviços contínuos a serem executadas com dedicação exclusiva de mão de obra terceirizada, regidos ...</td>
+          <td>Outros</td>
+          <td>BAIXO</td>
+          <td>O objeto é genérico e não especifica quais serviços serão prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>O objeto do presente instrumento é a contratação de empresa para prestação de serviços contínuos a
+serem executados com dedicação exclusiva ...</td>
+          <td>Segurança Pública</td>
+          <td>MÉDIO</td>
+          <td>Descrição muito genérica e não especifica os serviços a serem prestados.</td>
+        </tr>
+        
+        <tr>
+          <td>22000000</td>
+          <td>O objeto do presente instrumento é a contratação de empresa para prestação de serviços contínuos a
+serem executados com dedicação exclusiva ...</td>
+          <td>Segurança Pública</td>
+          <td>MÉDIO</td>
+          <td>Descrição genérica e falta de especificidade sobre os serviços a serem prestados.</td>
+        </tr>
+        
+    </tbody>
+  </table>
+</div>
+
+<div class="footer">
+  Pipeline ETL + ML + LLM | Relatório salvo em /tmp/relatorio_contratos_20260414.html
+</div>
+
+</body>
+</html>
